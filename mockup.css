@@ -1,0 +1,119 @@
+/* ===== MOCKUP ONLY =====
+   Review notes and placeholders for the November 18 mockup.
+   Delete this file, mockup.js, and the elements marked MOCKUP ONLY
+   (or with mock-* / *-placeholder classes) when building the real site. */
+
+.mock-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px var(--pad-inner);
+  background: var(--ink);
+  color: var(--white);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.mock-bar p { max-width: 1100px; }
+
+.mock-toggle {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--white);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mock-toggle:hover { border-color: var(--white); }
+
+.mock-note {
+  display: block;
+  max-width: 680px;
+  margin-bottom: 28px;
+  padding: 12px 16px;
+  border-left: 4px solid #8A8178;
+  border-radius: 6px;
+  background: #ECE6DD;
+  color: var(--ink);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.mock-note strong {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.mock-note[data-kind="updated"] {
+  border-left-color: var(--orange-mid);
+  background: #FCE7DE;
+}
+
+.mock-note[data-kind="new"] {
+  border-left-color: var(--park);
+  background: var(--park-tint);
+}
+
+.mock-note--on-dark,
+.mock-note--on-dark[data-kind="updated"] {
+  border-left-color: var(--white);
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--white);
+}
+
+body.hide-notes .mock-note { display: none; }
+
+/* Logo and wordmark stand-ins */
+.logo-placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 38px;
+  border: 1.5px dashed var(--orange-mid);
+  border-radius: 4px;
+  color: var(--orange-mid);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.logo-placeholder--light {
+  width: 110px;
+  height: 36px;
+  border-color: rgba(255, 255, 255, 0.7);
+  color: var(--white);
+}
+
+.wordmark-placeholder {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+}
+
+.wordmark-placeholder text {
+  font-family: 'CircularXX', 'Figtree', system-ui, sans-serif;
+  font-weight: 900;
+  font-size: 160px;
+  fill: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 700px) {
+  .mock-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

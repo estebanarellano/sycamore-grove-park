@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Google Analytics: the sister sites share one tag. Add it here once RAP confirms
+       it should cover Sycamore Grove too. Left out of the mockup on purpose. -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sycamore Grove Park Master Plan</title>
+  <meta name="description" content="Help shape the future of Sycamore Grove Park and Ramona Hall Community Center. Share your voice in the community planning process.">
+  <meta property="og:title" content="Sycamore Grove Park Master Plan">
+  <meta property="og:description" content="Help shape the future of Sycamore Grove Park and Ramona Hall Community Center. Share your voice in the community planning process.">
+  <meta property="og:type" content="website">
+  <!-- og:image and og:url go here once the share image and site address exist -->
+
+  <!-- MOCKUP ONLY: Figtree stands in for CircularXX until the font files are in ./Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- MOCKUP ONLY: review notes. Delete this line and mockup.js for the real site. -->
+  <link rel="stylesheet" href="mockup.css">
+</head>
+<body>
+
+  <!-- MOCKUP ONLY -->
+  <div class="mock-bar">
+    <p><strong>Draft mockup for review</strong> · Sycamore Grove Park Master Plan website · November 18, 2026 · Built on the Elysian Park and South Griffith Park template. Images, logo, and wordmark are placeholders. The language menu translates shared labels only, until the copy is approved.</p>
+    <button type="button" class="mock-toggle">Hide review notes</button>
+  </div>
+
+  <!-- SURVEY BANNER (optional, same as South Griffith Park) -->
+  <div class="survey-banner">
+    <p data-i18n-html="survey_banner"><strong>Coming soon:</strong> A community survey about Sycamore Grove Park will be available online and by mail.</p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">
+        <!-- Replace with <img src="./Logo/LA_Rec%26Parks_Logo_Orange.svg" alt="LA Rec &amp; Parks" class="nav__logo"> -->
+        <span class="nav__logo logo-placeholder" role="img" aria-label="LA Rec &amp; Parks">RAP logo</span>
+        <span class="nav__site-name"><span class="nav__site-name--full">SYCAMORE GROVE PARK MASTER PLAN</span><span class="nav__site-name--short">SYCAMORE GROVE</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#overview" data-i18n="nav_overview">Project Overview</a>
+        <a href="#involved" data-i18n="nav_involved">Get Involved</a>
+        <a href="#about" data-i18n="nav_about">About the Site</a>
+        <a href="#documents" data-i18n="nav_documents">Documents</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <div class="lang-selector">
+          <button class="lang-btn" id="langBtn" aria-expanded="false" aria-haspopup="listbox">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span id="langLabel">EN</span>
+            <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Select language">
+            <button role="option" aria-selected="true" data-code="EN">English</button>
+            <button role="option" aria-selected="false" data-code="ES">Español</button>
+            <button role="option" aria-selected="false" data-code="粤">广东话</button>
+            <button role="option" aria-selected="false" data-code="普">普通话</button>
+          </div>
+        </div>
+      </nav>
+      <button class="nav__hamburger" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="nav__mobile-menu" id="mobileMenu" aria-label="Mobile" hidden>
+      <a href="#overview" data-i18n="nav_overview">Project Overview</a>
+      <a href="#involved" data-i18n="nav_involved">Get Involved</a>
+      <a href="#about" data-i18n="nav_about">About the Site</a>
+      <a href="#documents" data-i18n="nav_documents">Documents</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <div class="mobile-lang">
+        <button data-code="EN" aria-pressed="true">English</button>
+        <button data-code="ES" aria-pressed="false">Español</button>
+        <button data-code="粤" aria-pressed="false">广东话</button>
+        <button data-code="普" aria-pressed="false">普通话</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO / INTRO -->
+    <section class="hero" id="intro">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <aside class="mock-note" data-kind="template"><strong>Same as sister sites</strong>Same layout as Elysian Park and South Griffith Park. The tagline is a draft, and a park map or aerial photo goes on the right.</aside>
+          <p class="eyebrow" data-i18n="hero_eyebrow">City of Los Angeles · Dept. of Recreation and Parks</p>
+          <h1 class="hero__headline" data-i18n-html="hero_headline">Sycamore<br>Grove Park<br>Master Plan</h1>
+          <p class="hero__tagline" data-i18n="hero_tagline">Rooted in Place. Grown Together.</p>
+          <p class="hero__body" data-i18n="hero_body">A community-centered plan for the future of Sycamore Grove Park and Ramona Hall Community Center, along the Arroyo Seco in Highland Park.</p>
+          <div class="hero__ctas">
+            <a href="#involved" class="btn btn--primary" data-i18n="hero_cta">Get Involved</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <!-- Replace with <img src="./Images/SYCAMORE%20GROVE%20MAP.jpg" alt="Sycamore Grove Park map"> -->
+          <span class="placeholder-label">Park map or aerial photo</span>
+        </div>
+      </div>
+      <div class="hero__stripes" aria-hidden="true">
+        <div class="stripe stripe--1"></div>
+        <div class="stripe stripe--2"></div>
+        <div class="stripe stripe--3"></div>
+      </div>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section section--white" id="overview">
+      <div class="section__inner">
+        <aside class="mock-note" data-kind="updated"><strong>Template, updated</strong>The project description is a working draft, and the second paragraph explains what a master plan is. The phases follow the five-phase process on the sister sites; Sycamore Grove's phases and timing still need confirming.</aside>
+        <div class="section__header">
+          <p class="section-label" data-i18n="overview_label">Project Overview</p>
+          <h2 class="section-heading" data-i18n="overview_heading">What We're Doing</h2>
+        </div>
+        <div class="overview-cols">
+          <div class="overview-desc">
+            <p data-i18n="overview_p1">We are working in community to develop a shared vision for Sycamore Grove Park and Ramona Hall Community Center, where neighborhood stability, climate resilience, accessibility, celebration, play, and connection to the rich landscape of Los Angeles can inform the future of these shared public resources.</p>
+            <p data-i18n="overview_p2">The Master Plan will be a guidebook for that future: a set of recommendations, from small fixes like a working water fountain to larger changes to the landscape, that support the people, plants, and animals who use the park. It is the first master plan for Sycamore Grove to center the voice of the local community, and community input will shape both documents the process produces: the Master Plan and an Environmental Impact Report.</p>
+            <p data-i18n="overview_p3">The planning process will follow five phases.</p>
+          </div>
+          <div class="overview-timeline">
+            <ol class="timeline">
+              <li class="timeline__item timeline__item--current">
+                <div class="timeline__dot" aria-hidden="true">I</div>
+                <div class="timeline__content">
+                  <p class="timeline__phase-label" data-i18n="phase_label_1">Phase I</p>
+                  <h3 data-i18n="timeline_1_title">Research and Analysis</h3>
+                  <p data-i18n="timeline_1_desc">Explore Sycamore Grove's history and existing conditions, and gather community and stakeholder insights to identify opportunities, challenges, and priorities that will help guide the Master Plan.</p>
+                </div>
+                <span class="timeline__badge" data-i18n="timeline_badge">Current</span>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__dot" aria-hidden="true">II</div>
+                <div class="timeline__content">
+                  <p class="timeline__phase-label" data-i18n="phase_label_2">Phase II</p>
+                  <h3 data-i18n="timeline_2_title">Design Alternatives</h3>
+                  <p data-i18n="timeline_2_desc">Develop different ideas for the park and identify short and long-term improvement priorities based on community and stakeholder input.</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__dot" aria-hidden="true">III</div>
+                <div class="timeline__content">
+                  <p class="timeline__phase-label" data-i18n="phase_label_3">Phase III</p>
+                  <h3 data-i18n="timeline_3_title">Master Plan Preparation</h3>
+                  <p data-i18n="timeline_3_desc">Refine the preferred ideas and compile all research, community outreach findings, and design recommendations into a comprehensive vision for the park.</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__dot" aria-hidden="true">IV</div>
+                <div class="timeline__content">
+                  <p class="timeline__phase-label" data-i18n="phase_label_4">Phase IV</p>
+                  <h3 data-i18n="timeline_4_title">Environmental Review</h3>
+                  <p data-i18n="timeline_4_desc">Complete environmental review in accordance with the California Environmental Quality Act (CEQA) to support project approval.</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__dot" aria-hidden="true">V</div>
+                <div class="timeline__content">
+                  <p class="timeline__phase-label" data-i18n="phase_label_5">Phase V</p>
+                  <h3 data-i18n="timeline_5_title">Master Plan Adoption</h3>
+                  <p data-i18n="timeline_5_desc">Once approved, the Master Plan will guide the future of the park.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="overview-timeline-graphic">
+          <!-- Replace with <img src="./Images/Sycamore%20Grove%20MP_Visual%20Timeline.png" alt="Sycamore Grove Park Master Plan visual timeline"> -->
+          <div class="graphic-placeholder"><span class="placeholder-label">Visual timeline graphic (from the Stayner team's schedule)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THEN AND NOW (new for Sycamore Grove) -->
+    <section class="section section--cream" id="history">
+      <div class="section__inner">
+        <aside class="mock-note" data-kind="new"><strong>New for Sycamore Grove</strong>A new section built from template parts, the way South Griffith added Proposed Alternatives. Historic photos to come. It could fold into About the Site to keep the menu at five links.</aside>
+        <div class="section__inner--split history-split">
+          <div class="about-text">
+            <p class="section-label" data-i18n="history_label">Then and Now</p>
+            <h2 class="section-heading" data-i18n="history_heading">A Grove Shaped by Water</h2>
+            <p data-i18n="history_p1">The Western Sycamore, after which the park is named, has long provided shade and shelter with its mottled bark and wide canopy. Sycamores thrive in moist ground, and the water that fed this grove came from the North Branch creek, which was buried in the early twentieth century.</p>
+            <p data-i18n="history_p2">Historic photos and neighbors' stories will appear here beside views of the park today, so everyone can start the conversation from the same place.</p>
+            <div class="prompt-card">
+              <p class="prompt-card__tag" data-i18n="prompt_tag">Share a memory</p>
+              <h3 data-i18n="prompt_heading">What makes you proud of Sycamore Grove?</h3>
+              <p data-i18n="prompt_body">Tell us about a moment, a place, or a person that makes this park yours.</p>
+              <a href="#involved" class="btn btn--outline" data-i18n="prompt_cta">Share Your Story</a>
+            </div>
+          </div>
+          <div class="carousel" role="region" aria-label="Historic and current photos" aria-roledescription="carousel">
+            <div class="carousel__slide is-active">
+              <div class="carousel__placeholder"><span class="placeholder-label">Historic photo: the North Branch creek</span></div>
+              <span class="carousel__credit">Photo: archive to be confirmed</span>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__placeholder"><span class="placeholder-label">The same view today</span></div>
+              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__placeholder"><span class="placeholder-label">Historic photo: Ramona Hall or the bandshell</span></div>
+              <span class="carousel__credit">Photo: archive to be confirmed</span>
+            </div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Previous image">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Next image">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+            </button>
+            <div class="carousel__dots" aria-hidden="true">
+              <button class="carousel__dot is-active" tabindex="-1"></button>
+              <button class="carousel__dot" tabindex="-1"></button>
+              <button class="carousel__dot" tabindex="-1"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GET INVOLVED -->
+    <section class="section section--orange" id="involved">
+      <div class="section__inner">
+        <aside class="mock-note mock-note--on-dark" data-kind="updated"><strong>Template, updated</strong>Same layout as the sister sites. New: a placeholder for the ETC Institute community survey, and an online version of each workshop for people who can't attend.</aside>
+        <div class="involved-split">
+          <div class="involved-left">
+            <p class="section-label section-label--light" data-i18n="involved_label">Get Involved</p>
+            <h2 class="section-heading section-heading--white" data-i18n="involved_heading">Share Your Voice</h2>
+            <p class="involved-body" data-i18n="involved_body">This is the first master plan for Sycamore Grove that centers the voice of the local community. Your ideas, priorities, and concerns will help guide every recommendation.</p>
+            <p class="survey-closed" data-i18n="survey_note">A community survey by ETC Institute will be available online and by mail. Check back here, or subscribe below to hear when it opens.</p>
+            <div class="survey-cta">
+              <span class="btn btn--accent is-soon" aria-disabled="true" data-i18n="survey_cta_soon">Survey Coming Soon</span>
+            </div>
+            <div class="workshop-block">
+              <p class="workshop-tag" data-i18n="workshop_tag">Community Workshop</p>
+              <h3 data-i18n="workshop_heading">Next Event to be Announced. Subscribe below for Updates</h3>
+              <ul class="workshop-details">
+                <li><span data-i18n="workshop_date_label">Date</span><span data-i18n="workshop_date_value">TBD</span></li>
+                <li><span data-i18n="workshop_time_label">Time</span><span data-i18n="workshop_time_value">TBD</span></li>
+                <li><span data-i18n="workshop_where_label">Where</span><span data-i18n="workshop_where_value">TBD</span></li>
+              </ul>
+            </div>
+            <div class="online-block">
+              <p class="workshop-tag" data-i18n="online_tag">Can't make it in person?</p>
+              <h3 data-i18n="online_heading">Take Part Online</h3>
+              <p data-i18n="online_body">Every workshop will have an online version with the same materials and questions, so you can share your input on your own time.</p>
+              <span class="btn btn--white is-soon" aria-disabled="true" data-i18n="online_cta">Opens With the First Workshop</span>
+            </div>
+          </div>
+          <div class="involved-form">
+            <form id="feedbackForm" novalidate>
+              <h3 data-i18n="form_heading">Send Us Feedback</h3>
+              <div class="form-field">
+                <label for="name" data-i18n="form_name_label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" data-i18n-placeholder="form_name_placeholder">
+              </div>
+              <div class="form-field">
+                <label for="email" data-i18n="form_email_label">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" data-i18n-placeholder="form_email_placeholder">
+              </div>
+              <div class="form-field">
+                <label for="message" data-i18n="form_message_label">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your feedback or question..." required data-i18n-placeholder="form_message_placeholder"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" data-i18n="form_submit">Send Feedback</button>
+              <p class="form-status" id="formStatus" aria-live="polite" aria-atomic="true"></p>
+            </form>
+          </div>
+        </div>
+        <div class="updates-row">
+          <p class="updates-label" data-i18n="updates_label">Get updates on project progress</p>
+          <form class="updates-form" id="updatesForm" novalidate>
+            <input type="email" class="updates-input" placeholder="Enter email" aria-label="Email address" required data-i18n-placeholder="updates_placeholder">
+            <button type="submit" class="updates-submit" data-i18n="updates_submit">Subscribe</button>
+          </form>
+          <p class="updates-status" id="updatesStatus" aria-live="polite" aria-atomic="true"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT THE SITE -->
+    <section class="section section--cream" id="about">
+      <div class="section__inner">
+        <aside class="mock-note" data-kind="template"><strong>Same as sister sites</strong>Template layout with Sycamore Grove copy. Photos by Rio Ash Phoenix to come, each with a credit.</aside>
+        <div class="section__inner--split about-split">
+          <div class="about-text">
+            <p class="section-label" data-i18n="about_label">About the Site</p>
+            <h2 class="section-heading" data-i18n="about_heading">Sycamore Grove Today</h2>
+            <p data-i18n="about_p1">Sycamore Grove is both a city park and a riparian environment, located immediately adjacent to the Arroyo Seco and the Arroyo Seco Parkway.</p>
+            <p data-i18n="about_p2">The park is a beloved community asset, with the historic Ramona Hall Community Center, a bandshell, tennis courts, and other amenities that serve surrounding Highland Park residents.</p>
+          </div>
+          <div class="carousel" role="region" aria-label="Site images" aria-roledescription="carousel">
+            <div class="carousel__slide is-active">
+              <div class="carousel__placeholder"><span class="placeholder-label">Sycamore canopy</span></div>
+              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__placeholder"><span class="placeholder-label">Ramona Hall Community Center</span></div>
+              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__placeholder"><span class="placeholder-label">Bandshell</span></div>
+              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__placeholder"><span class="placeholder-label">Arroyo Seco edge</span></div>
+              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
+            </div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Previous image">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Next image">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+            </button>
+            <div class="carousel__dots" aria-hidden="true">
+              <button class="carousel__dot is-active" tabindex="-1"></button>
+              <button class="carousel__dot" tabindex="-1"></button>
+              <button class="carousel__dot" tabindex="-1"></button>
+              <button class="carousel__dot" tabindex="-1"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCUMENTS -->
+    <section class="section section--white" id="documents">
+      <div class="section__inner">
+        <aside class="mock-note" data-kind="template"><strong>Same as sister sites</strong>The template's empty state, until the Research and Analysis document is ready. Documents will then be grouped by phase, as on South Griffith Park.</aside>
+        <div class="section__header">
+          <p class="section-label" data-i18n="docs_label">Documents</p>
+          <h2 class="section-heading" data-i18n="docs_heading">Project Materials</h2>
+          <p class="section-intro" data-i18n="docs_intro">Project reports, presentations, and reference materials will be made available here for download as they are produced.</p>
+        </div>
+        <div class="docs-empty">
+          <p class="docs-empty__title" data-i18n="docs_empty_title">Documents coming soon</p>
+          <p data-i18n="docs_empty_body">Check back as the project progresses — reports and presentations will be uploaded here for download.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--cream" id="faq">
+      <div class="section__inner">
+        <aside class="mock-note" data-kind="updated"><strong>Template, updated</strong>Same accordion, with new questions: what a master plan is, what to do if you can't make a meeting, and who the plan is for. That last answer is to be written with the team.</aside>
+        <div class="section__header">
+          <p class="section-label" data-i18n="faq_label">FAQ</p>
+          <h2 class="section-heading" data-i18n="faq_heading">Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion" role="list">
+
+          <div class="accordion__item" role="listitem">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-1">
+              <span data-i18n="faq_1_q">What is the Sycamore Grove Park Master Plan?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__body" id="faq-1" role="region">
+              <div class="accordion__body-inner" data-i18n-html="faq_1_body">
+                <p>The Sycamore Grove Park Master Plan is a planning initiative led by the City of Los Angeles Department of Recreation and Parks to guide the future of Sycamore Grove Park and Ramona Hall Community Center. It is the first master plan for the park to center the voice of the local community.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" role="listitem">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-2">
+              <span data-i18n="faq_2_q">What is a master plan?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__body" id="faq-2" role="region">
+              <div class="accordion__body-inner" data-i18n-html="faq_2_body">
+                <p>A master plan is a legal document: a set of recommendations for how a park should change over time. Recommendations can range from small improvements, like fixing a water fountain, to larger changes to the landscape.</p>
+                <p>This process produces two documents: the Master Plan and an Environmental Impact Report, which studies how proposed changes would affect the environment. Community input shapes the decisions in both.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" role="listitem">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-3">
+              <span data-i18n="faq_3_q">Why is this happening now?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__body" id="faq-3" role="region">
+              <div class="accordion__body-inner" data-i18n-html="faq_3_body">
+                <p>Sycamore Grove is a beloved community asset, and RAP has identified it as a park in need of a new vision. <em class="draft">[Draft: add funding and background once confirmed with the project team.]</em></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" role="listitem">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-4">
+              <span data-i18n="faq_4_q">How can I get involved?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__body" id="faq-4" role="region">
+              <div class="accordion__body-inner" data-i18n-html="faq_4_body">
+                <p>Community members will be able to take part through:</p>
+                <ul>
+                  <li>A community survey, online and by mail</li>
+                  <li>Community workshops</li>
+                  <li>An online version of each workshop</li>
+                  <li>Sending feedback through this website</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" role="listitem">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-5">
+              <span data-i18n="faq_5_q">What if I can't make a meeting?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__body" id="faq-5" role="region">
+              <div class="accordion__body-inner" data-i18n-html="faq_5_body">
+                <p>Every workshop will have an online version with the same materials and questions, so you can share your input on your own time. You can also send feedback through the form on this page at any time.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" role="listitem">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-6">
+              <span data-i18n="faq_6_q">Who is this plan for?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__body" id="faq-6" role="region">
+              <div class="accordion__body-inner" data-i18n-html="faq_6_body">
+                <p><em class="draft">[Draft: answer to be written with the project team. It should speak directly to neighbors' questions about displacement, change in Highland Park, and who the park serves.]</em></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" role="listitem">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-7">
+              <span data-i18n="faq_7_q">When will the Master Plan be complete?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__body" id="faq-7" role="region">
+              <div class="accordion__body-inner" data-i18n-html="faq_7_body">
+                <p>The tentative schedule is:</p>
+                <ul>
+                  <li><strong>Current (Fall 2026 to early 2027):</strong> Research and Analysis</li>
+                  <li><strong>2027:</strong> Community engagement and design</li>
+                  <li><strong>2027 to 2028:</strong> Environmental Review (CEQA process)</li>
+                  <li><strong>Fall 2028:</strong> Final Master Plan</li>
+                </ul>
+                <p>Updates to the schedule will be shared as the work advances.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" role="listitem">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-8">
+              <span data-i18n="faq_8_q">Who should I contact with questions?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion__body" id="faq-8" role="region">
+              <div class="accordion__body-inner" data-i18n-html="faq_8_body">
+                <p>You can reach the project team by submitting the feedback form on this page.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__supergraphic">
+      <!-- Replace with <img src="./Logo/SGV-Footer-Wordmark.png" alt="Sycamore Grove" class="footer__wordmark"> -->
+      <svg class="footer__wordmark wordmark-placeholder" viewBox="0 0 1000 132" role="img" aria-label="Sycamore Grove"><text x="0" y="122" textLength="1000" lengthAdjust="spacingAndGlyphs">SYCAMORE GROVE</text></svg>
+    </div>
+    <div class="footer__inner">
+      <div class="footer__left">
+        <aside class="mock-note mock-note--on-dark" data-kind="updated"><strong>Template, updated</strong>Same footer. Sycamore Grove's wordmark and green accent color are proposals.</aside>
+        <!-- Replace with <img src="./Logo/LA_Rec%26Parks_Logo_White.svg" alt="LA Rec &amp; Parks" class="footer__logo" width="130" height="40"> -->
+        <span class="footer__logo logo-placeholder logo-placeholder--light" role="img" aria-label="LA Rec &amp; Parks">RAP logo</span>
+        <p data-i18n="footer_copyright">© 2026 City of Los Angeles Department of Recreation and Parks. All rights reserved.</p>
+      </div>
+      <div class="footer__right">
+        <span class="footer__note" data-i18n-html="footer_note">Sycamore Grove Park is in Highland Park, along the Arroyo Seco.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="main.js"></script>
+  <!-- MOCKUP ONLY -->
+  <script src="mockup.js"></script>
+</body>
+</html>
