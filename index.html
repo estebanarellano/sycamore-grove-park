@@ -2,496 +2,678 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <!-- Google Analytics: the sister sites share one tag. Add it here once RAP confirms
-       it should cover Sycamore Grove too. Left out of the mockup on purpose. -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sycamore Grove Park Master Plan</title>
-  <meta name="description" content="Help shape the future of Sycamore Grove Park and Ramona Hall Community Center. Share your voice in the community planning process.">
-  <meta property="og:title" content="Sycamore Grove Park Master Plan">
-  <meta property="og:description" content="Help shape the future of Sycamore Grove Park and Ramona Hall Community Center. Share your voice in the community planning process.">
-  <meta property="og:type" content="website">
-  <!-- og:image and og:url go here once the share image and site address exist -->
-
-  <!-- MOCKUP ONLY: Figtree stands in for CircularXX until the font files are in ./Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sycamore Grove Park &amp; Ramona Hall Master Plan</title>
+  <meta name="description" content="We are working in community to develop a shared vision for Sycamore Grove Park and Ramona Hall Community Center in Highland Park, Los Angeles.">
+  <meta name="theme-color" content="#F2E9DD">
+  <meta property="og:title" content="Sycamore Grove Park &amp; Ramona Hall Master Plan">
+  <meta property="og:description" content="We are working in community to develop a shared vision for Sycamore Grove Park and Ramona Hall Community Center.">
+  <meta property="og:image" content="Images/hero-grove-1400.jpg">
+  <!-- Google Analytics: add the shared RAP tag here if RAP confirms (the sister sites use G-YDJCKE2F5T). -->
+  <!-- Figtree stands in for CircularXX until the RAP font files are added to /Fonts. Remove these three lines then. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- MOCKUP ONLY: review notes. Delete this line and mockup.js for the real site. -->
-  <link rel="stylesheet" href="mockup.css">
+  <script>document.documentElement.className += ' js';</script>
 </head>
 <body>
 
-  <!-- MOCKUP ONLY -->
-  <div class="mock-bar">
-    <p><strong>Draft mockup for review</strong> · Sycamore Grove Park Master Plan website · November 18, 2026 · Built on the Elysian Park and South Griffith Park template. Images, logo, and wordmark are placeholders. The language menu translates shared labels only, until the copy is approved.</p>
-    <button type="button" class="mock-toggle">Hide review notes</button>
-  </div>
+<!-- RAP logo, drawn once and reused. Text takes the color of whatever it sits on. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="rap-logo" viewBox="0 0 515 271">
+<defs>
+<clipPath id="rap_clip_1">
+<path transform="matrix(1,0,0,-1,-615,565)" d="M615 294H1130V565H615Z" clip-rule="evenodd"/>
+</clipPath>
+<clipPath id="rap_clip_2">
+<path transform="matrix(1,0,0,-1,-615,565)" d="M0 0H1224V792H0Z"/>
+</clipPath>
+<clipPath id="rap_clip_7">
+<path transform="matrix(1,0,0,-1,-615,565)" d="M0 0H1224V792H0Z"/>
+</clipPath>
+<clipPath id="rap_clip_10">
+<path transform="matrix(1,0,0,-1,-615,565)" d="M0 0H1224V792H0Z"/>
+</clipPath>
+<clipPath id="rap_clip_11">
+<path transform="matrix(1,0,0,-1,-615,565)" d="M0 0H1224V792H0Z"/>
+</clipPath>
+<clipPath id="rap_clip_12">
+<path transform="matrix(1,0,0,-1,-615,565)" d="M0 0H1224V792H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#rap_clip_1)">
+<g clip-path="url(#rap_clip_2)">
+<path transform="matrix(1,0,0,-1,-614.9999,555.7576)" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#f79640" d="M0 0H1224"/>
+<path transform="matrix(1,0,0,-1,-614.9999,546.4788)" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#e8664a" d="M0 0H1224"/>
+<path transform="matrix(1,0,0,-1,-614.9999,537.2)" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#d14f29" d="M0 0H1224"/>
+</g>
+<path transform="matrix(1,0,0,-1,-544,218.3389)" stroke-width="1.68" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#215e9e" d="M0 0H116.461"/>
+<g clip-path="url(#rap_clip_7)">
+<path transform="matrix(1,0,0,-1,508.75416,177.82459)" d="M0 0-42.538 102.062C-45.256 108.178-49.689 113.171-55.81 115.292-57.834 115.993-59.928 116.39-62.525 116.39-65.12 116.39-67.459 115.908-69.239 115.292-75.359 113.171-79.799 108.174-82.52 102.04H-82.521C-87.297 90.491-119.684 12.175-119.695 12.149-121.822 7.143-126.776 3.628-132.555 3.611-132.569 3.611-132.583 3.612-132.597 3.612-132.622 3.612-475.972 3.611-475.983 3.611-483.706 3.63-489.962 9.893-489.963 17.618-489.963 17.618-489.963 17.619-489.963 17.62-489.963 17.622-489.963 17.624-489.963 17.626L-489.964 109.385C-489.964 113.254-493.101 116.391-496.971 116.391-500.841 116.391-503.978 113.254-503.978 109.385-503.978 109.382-503.978 109.378-503.978 109.375V18.319C-503.978 2.844-491.429-9.701-475.949-9.701L-132.597-9.699V-9.701C-120.938-9.701-110.943-2.585-106.719 7.54-106.719 7.54-100.618 22.179-93.324 39.683L-31.722 39.684C-21.942 16.218-12.936-5.389-12.936-5.389-11.448-8.96-7.345-10.649-3.773-9.161-.201-7.673 1.489-3.571 0 0M-87.777 52.995C-79.59 72.641-69.174 97.634-69.129 97.743-68.93 98.228-68.709 98.714-68.359 99.255-67.324 100.858-65.491 102.613-62.524 102.613-59.557 102.613-57.724 100.858-56.689 99.255-56.339 98.714-56.118 98.228-55.919 97.743-55.874 97.634-45.76 73.365-37.27 52.995-54.777 52.995-68.608 52.995-87.777 52.995" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,111.08258,214.1629)" d="M0 0H205.414C207.308 0 209.074 .931 210.169 2.476 211.987 5.045 213.716 7.681 215.35 10.38 216.128 11.666 215.207 13.31 213.704 13.31H-8.29C-9.793 13.31-10.715 11.666-9.937 10.38-8.302 7.681-6.573 5.045-4.755 2.476-3.661 .931-1.894 0 0 0" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,138.52143,240.7839)" d="M0 0H150.536C153.19 0 155.766 .907 157.829 2.574 160.862 5.024 163.783 7.607 166.586 10.311 167.713 11.399 166.938 13.31 165.371 13.31H-14.835C-16.401 13.31-17.176 11.399-16.049 10.311-13.247 7.607-10.325 5.024-7.293 2.574-5.229 .907-2.653 0 0 0" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,213.78961,267.4049)" d="M0 0C18.024 0 35.211 3.646 50.868 10.234 52.474 10.909 51.985 13.31 50.242 13.31H-50.242C-51.985 13.31-52.474 10.909-50.868 10.234-35.211 3.646-18.024 0 0 0" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,345.34999,134.2998)" d="M0 0C-.843 71.812-59.53 129.975-131.56 129.975-203.591 129.975-262.277 71.812-263.121 0-263.127-.522-263.141-1.042-263.141-1.565-263.141-5.524-262.955-9.44-262.608-13.31-262.274-17.043-261.788-20.732-261.151-24.371-260.922-25.676-259.772-26.621-258.446-26.621H-249.417C-248.195-26.621-247.295-25.504-247.529-24.306-248.235-20.696-248.773-17.028-249.143-13.31-249.529-9.446-249.736-5.53-249.736-1.565-249.736-1.042-249.723-.522-249.716 0-248.873 64.423-196.199 116.574-131.56 116.574-66.922 116.574-14.247 64.423-13.406 0-13.398-.522-13.385-1.042-13.385-1.565-13.385-5.53-13.592-9.446-13.978-13.31-14.348-17.028-14.887-20.696-15.592-24.306-15.826-25.504-14.926-26.621-13.704-26.621H-4.675C-3.349-26.621-2.199-25.676-1.97-24.371-1.333-20.732-.847-17.043-.513-13.31-.166-9.44 .02-5.524 .02-1.565 .02-1.042 .006-.522 0 0" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,152.40052,99.65201)" d="M0 0H-1.687C-2.114 0-2.461-.347-2.461-.774V-13.119C-2.461-13.546-2.808-13.893-3.235-13.893H-10.004C-10.432-13.893-10.779-13.546-10.779-13.119V22.644C-10.779 23.071-10.432 23.418-10.004 23.418H4.014C11.383 23.418 16.121 18.366 16.121 11.736 16.121 6.98 13.649 3.297 9.539 1.521 9.122 1.34 8.927 .861 9.131 .455L15.769-12.772C16.027-13.286 15.653-13.893 15.077-13.893H7.659C7.361-13.893 7.09-13.722 6.961-13.454L.698-.439C.569-.17 .298 0 0 0M2.435 7.157C5.856 7.157 7.699 9.051 7.699 11.683 7.699 14.472 5.856 16.208 2.435 16.208H-1.687C-2.114 16.208-2.461 15.862-2.461 15.434V7.931C-2.461 7.503-2.114 7.157-1.687 7.157Z" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,175.16138,112.77081)" d="M0 0V35.762C0 36.19 .347 36.536 .774 36.536H22.861C23.289 36.536 23.636 36.19 23.636 35.762V29.47C23.636 29.043 23.289 28.696 22.861 28.696H9.092C8.664 28.696 8.317 28.349 8.317 27.922V22.366C8.317 21.939 8.664 21.592 9.092 21.592H21.44C21.868 21.592 22.215 21.245 22.215 20.818V15.051C22.215 14.623 21.868 14.277 21.44 14.277H9.092C8.664 14.277 8.317 13.93 8.317 13.503V7.894C8.317 7.467 8.664 7.12 9.092 7.12H22.914C23.342 7.12 23.689 6.773 23.689 6.346V0C23.689-.427 23.342-.774 22.914-.774H.774C.347-.774 0-.427 0 0" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,203.84113,94.96869)" d="M0 0C0 11.63 8.843 19.524 19.267 19.524 29.992 19.524 34.985 12.927 36.459 7.656 36.57 7.26 36.331 6.85 35.939 6.726L29.556 4.714C29.151 4.586 28.724 4.804 28.593 5.207 27.755 7.802 25.255 11.42 19.267 11.42 14.265 11.42 8.633 7.841 8.633 0 8.633-6.999 13.792-11.051 19.371-11.051 25.327-11.051 27.987-7.401 28.949-4.726 29.085-4.347 29.493-4.146 29.881-4.256L36.381-6.106C36.787-6.222 37.037-6.642 36.919-7.048 35.428-12.187 30.416-19.365 19.371-19.365 8.633-19.365 0-11.629 0 0" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,274.0426,110.494388)" d="M0 0C-.295 .318-.787 .323-1.105 .027-3.59-2.291-6.665-3.787-10.329-3.787-17.699-3.787-21.857 1.317-21.857 6.474-21.857 11.053-19.489 13.737-15.488 16.631L-16.015 17.21C-17.804 19.157-19.909 21.788-19.909 25.156-19.909 31.524-14.541 35.05-9.329 35.05-3.17 35.05 1.357 31.103 1.357 25.473 1.357 21.735-1.169 18.894-3.907 16.895L-5.118 15.999-.67 11.319C-.368 11.001 .137 10.997 .444 11.31L8.505 19.538C8.99 20.034 9.832 19.69 9.832 18.997V11.424C9.832 11.22 9.752 11.025 9.608 10.88L5.096 6.323C4.802 6.027 4.796 5.55 5.084 5.247L11.701-1.744C12.168-2.238 11.818-3.051 11.139-3.051H3.169C2.953-3.051 2.747-2.961 2.601-2.803ZM-5.747 4.967C-5.422 5.262-5.389 5.762-5.688 6.082L-10.961 11.737-11.224 11.527C-12.961 10.263-14.119 8.948-14.119 6.895-14.119 4.948-12.54 3.054-10.119 3.054-8.507 3.054-7.097 3.738-5.747 4.967M-10.593 21.788-9.698 20.841-8.224 21.894C-6.697 22.999-6.065 24.262-6.065 25.473-6.065 27.262-7.486 28.63-9.329 28.63-10.908 28.63-12.488 27.629-12.488 25.42-12.488 23.946-11.487 22.735-10.593 21.788" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,140.45398,148.25769)" d="M0 0V-11.871C0-12.298-.347-12.645-.774-12.645H-7.543C-7.971-12.645-8.317-12.298-8.317-11.871V23.891C-8.317 24.319-7.971 24.666-7.543 24.666H5.738C13.318 24.666 18.529 19.667 18.529 12.72 18.529 5.669 13.318 .774 5.738 .774H.775C.347 .774 0 .428 0 0M4.896 7.931C8.054 7.931 10.213 9.773 10.213 12.667 10.213 15.667 8.054 17.456 4.896 17.456H.827C.4 17.456 .053 17.109 .053 16.682V8.705C.053 8.278 .4 7.931 .827 7.931Z" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,182.10242,153.32501)" d="M0 0H-13.33C-13.658 0-13.95-.207-14.06-.516L-16.379-7.062C-16.488-7.371-16.781-7.578-17.109-7.578H-24.181C-24.722-7.578-25.096-7.037-24.906-6.531L-11.434 29.232C-11.32 29.533-11.031 29.733-10.709 29.733H-2.149C-1.826 29.733-1.537 29.532-1.424 29.229L11.897-6.533C12.085-7.039 11.711-7.578 11.171-7.578H3.779C3.451-7.578 3.158-7.371 3.049-7.062L.73-.516C.62-.207 .328 0 0 0M-10.043 7.578H-3.173C-2.641 7.578-2.267 8.103-2.442 8.606L-5.837 18.388C-6.077 19.079-7.053 19.083-7.298 18.393L-10.772 8.611C-10.951 8.107-10.577 7.578-10.043 7.578" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,209.79492,147.0098)" d="M0 0H-1.687C-2.115 0-2.461-.347-2.461-.774V-13.119C-2.461-13.546-2.808-13.893-3.236-13.893H-10.004C-10.432-13.893-10.779-13.546-10.779-13.119V22.644C-10.779 23.071-10.432 23.418-10.004 23.418H4.014C11.383 23.418 16.121 18.366 16.121 11.736 16.121 6.98 13.649 3.297 9.539 1.521 9.122 1.34 8.927 .861 9.131 .455L15.769-12.772C16.027-13.286 15.653-13.893 15.077-13.893H7.659C7.361-13.893 7.09-13.722 6.961-13.454L.698-.439C.569-.171 .298 0 0 0M2.435 7.157C5.856 7.157 7.699 9.051 7.699 11.683 7.699 14.472 5.856 16.208 2.435 16.208H-1.687C-2.115 16.208-2.461 15.861-2.461 15.434V7.931C-2.461 7.503-2.115 7.157-1.687 7.157Z" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,244.42578,146.95319)" d="M0 0-3.354-3.73C-3.482-3.872-3.552-4.057-3.552-4.248V-13.175C-3.552-13.603-3.899-13.949-4.327-13.949H-11.096C-11.523-13.949-11.87-13.603-11.87-13.175V22.587C-11.87 23.014-11.523 23.361-11.096 23.361H-4.327C-3.899 23.361-3.552 23.014-3.552 22.587V9.75C-3.552 9.034-2.664 8.702-2.194 9.242L9.85 23.095C9.997 23.264 10.211 23.361 10.435 23.361H19.293C19.964 23.361 20.317 22.568 19.869 22.069L6.91 7.66C6.671 7.393 6.645 6.998 6.848 6.703L20.247-12.736C20.601-13.25 20.234-13.949 19.609-13.949H11.121C10.866-13.949 10.626-13.823 10.482-13.613L1.215-.08C.932 .334 .335 .373 0 0" fill="currentColor"/>
+<path transform="matrix(1,0,0,-1,288.06343,134.6337)" d="M0 0C-.414-.116-.828 .129-.955 .539-1.483 2.258-3.075 4.464-6.992 4.464-10.098 4.464-12.097 2.517-12.097 .464-12.097-1.325-10.993-2.64-8.413-3.114L-3.412-4.061C3.695-5.376 7.379-9.955 7.379-15.271 7.379-21.112 2.483-27.058-6.412-27.058-16.283-27.058-20.758-20.941-21.588-15.804-21.651-15.412-21.384-15.042-20.998-14.948L-14.869-13.469C-14.444-13.367-14.015-13.635-13.934-14.064-13.35-17.142-11.014-19.691-6.307-19.691-3.043-19.691-1.043-18.112-1.043-15.797-1.043-13.902-2.57-12.534-5.044-12.061L-10.15-11.114C-16.467-9.903-20.309-5.693-20.309-.167-20.309 6.885-14.098 11.832-6.939 11.832 1.854 11.832 5.489 6.864 6.535 2.634 6.637 2.222 6.403 1.803 5.995 1.688Z" fill="currentColor"/>
+</g>
+<g clip-path="url(#rap_clip_10)">
+<path transform="matrix(1,0,0,-1,74.435977,474.2002)" stroke-width="1" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="currentColor" d="M0 0C36.307 0 65.74 29.433 65.74 65.739 65.74 102.047 36.307 131.479 0 131.479-36.307 131.479-65.74 102.047-65.74 65.739-65.74 29.433-36.307 0 0 0Z"/>
+</g>
+<g clip-path="url(#rap_clip_11)">
+</g>
+<g clip-path="url(#rap_clip_12)">
+</g>
+<path transform="matrix(1,0,0,-1,-260.76,322.3677)" stroke-width=".5" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="currentColor" d="M0 0H230.76"/>
+</g>
+</symbol>
+</svg>
 
-  <!-- SURVEY BANNER (optional, same as South Griffith Park) -->
-  <div class="survey-banner">
-    <p data-i18n-html="survey_banner"><strong>Coming soon:</strong> A community survey about Sycamore Grove Park will be available online and by mail.</p>
-  </div>
+<a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
-  <!-- NAVIGATION -->
-  <header class="nav" id="top">
-    <div class="nav__inner">
-      <a href="#top" class="nav__brand">
-        <!-- Replace with <img src="./Logo/LA_Rec%26Parks_Logo_Orange.svg" alt="LA Rec &amp; Parks" class="nav__logo"> -->
-        <span class="nav__logo logo-placeholder" role="img" aria-label="LA Rec &amp; Parks">RAP logo</span>
-        <span class="nav__site-name"><span class="nav__site-name--full">SYCAMORE GROVE PARK MASTER PLAN</span><span class="nav__site-name--short">SYCAMORE GROVE</span></span>
-      </a>
-      <nav class="nav__links" aria-label="Primary">
-        <a href="#overview" data-i18n="nav_overview">Project Overview</a>
-        <a href="#involved" data-i18n="nav_involved">Get Involved</a>
-        <a href="#about" data-i18n="nav_about">About the Site</a>
-        <a href="#documents" data-i18n="nav_documents">Documents</a>
-        <a href="#faq" data-i18n="nav_faq">FAQ</a>
-        <div class="lang-selector">
-          <button class="lang-btn" id="langBtn" aria-expanded="false" aria-haspopup="listbox">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            <span id="langLabel">EN</span>
-            <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Select language">
-            <button role="option" aria-selected="true" data-code="EN">English</button>
-            <button role="option" aria-selected="false" data-code="ES">Español</button>
-            <button role="option" aria-selected="false" data-code="粤">广东话</button>
-            <button role="option" aria-selected="false" data-code="普">普通话</button>
-          </div>
-        </div>
-      </nav>
-      <button class="nav__hamburger" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+<header class="site-header" id="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#intro">
+      <svg class="brand__logo" viewBox="0 0 515 271" role="img" aria-label="LA Rec &amp; Parks"><use href="#rap-logo"></use></svg>
+      <span class="brand__name">
+        <span class="brand__long">Sycamore Grove Park &amp; Ramona Hall Master Plan</span>
+        <span class="brand__short" aria-hidden="true">Sycamore Grove Master Plan</span>
+      </span>
+    </a>
+    <div class="site-header__actions">
+      <a class="pill pill--header" href="#involved" data-i18n="nav_involved">Get Involved</a>
+      <div class="lang">
+        <button class="lang__btn" type="button" aria-expanded="false" aria-controls="lang-list">
+          <span class="sr-only" data-i18n="lang_label">Language:</span>
+          <span class="lang__code">EN</span>
+          <svg class="lang__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.5l4 3.5 4-3.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <ul class="lang__list" id="lang-list" hidden>
+          <li><button type="button" data-lang="EN" lang="en">English</button></li>
+          <li><button type="button" data-lang="ES" lang="es">Español</button></li>
+          <li><button type="button" data-lang="YUE" lang="zh-Hant">粵語</button></li>
+          <li><button type="button" data-lang="ZH" lang="zh-Hans">普通话</button></li>
+        </ul>
+      </div>
+      <button class="menu-btn" type="button" aria-haspopup="dialog" aria-controls="menu">
+        <span data-i18n="nav_menu">Menu</span>
+        <span class="menu-btn__icon" aria-hidden="true"></span>
       </button>
     </div>
-    <nav class="nav__mobile-menu" id="mobileMenu" aria-label="Mobile" hidden>
-      <a href="#overview" data-i18n="nav_overview">Project Overview</a>
-      <a href="#involved" data-i18n="nav_involved">Get Involved</a>
-      <a href="#about" data-i18n="nav_about">About the Site</a>
-      <a href="#documents" data-i18n="nav_documents">Documents</a>
-      <a href="#faq" data-i18n="nav_faq">FAQ</a>
-      <div class="mobile-lang">
-        <button data-code="EN" aria-pressed="true">English</button>
-        <button data-code="ES" aria-pressed="false">Español</button>
-        <button data-code="粤" aria-pressed="false">广东话</button>
-        <button data-code="普" aria-pressed="false">普通话</button>
-      </div>
-    </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-
-    <!-- HERO / INTRO -->
-    <section class="hero" id="intro">
-      <div class="hero__inner">
-        <div class="hero__content">
-          <aside class="mock-note" data-kind="template"><strong>Same as sister sites</strong>Same layout as Elysian Park and South Griffith Park. The tagline is a draft, and a park map or aerial photo goes on the right.</aside>
-          <p class="eyebrow" data-i18n="hero_eyebrow">City of Los Angeles · Dept. of Recreation and Parks</p>
-          <h1 class="hero__headline" data-i18n-html="hero_headline">Sycamore<br>Grove Park<br>Master Plan</h1>
-          <p class="hero__tagline" data-i18n="hero_tagline">Rooted in Place. Grown Together.</p>
-          <p class="hero__body" data-i18n="hero_body">A community-centered plan for the future of Sycamore Grove Park and Ramona Hall Community Center, along the Arroyo Seco in Highland Park.</p>
-          <div class="hero__ctas">
-            <a href="#involved" class="btn btn--primary" data-i18n="hero_cta">Get Involved</a>
-          </div>
-        </div>
-        <div class="hero__image">
-          <!-- Replace with <img src="./Images/SYCAMORE%20GROVE%20MAP.jpg" alt="Sycamore Grove Park map"> -->
-          <span class="placeholder-label">Park map or aerial photo</span>
-        </div>
-      </div>
-      <div class="hero__stripes" aria-hidden="true">
-        <div class="stripe stripe--1"></div>
-        <div class="stripe stripe--2"></div>
-        <div class="stripe stripe--3"></div>
-      </div>
-    </section>
-
-    <!-- PROJECT OVERVIEW -->
-    <section class="section section--white" id="overview">
-      <div class="section__inner">
-        <aside class="mock-note" data-kind="updated"><strong>Template, updated</strong>The project description is a working draft, and the second paragraph explains what a master plan is. The phases follow the five-phase process on the sister sites; Sycamore Grove's phases and timing still need confirming.</aside>
-        <div class="section__header">
-          <p class="section-label" data-i18n="overview_label">Project Overview</p>
-          <h2 class="section-heading" data-i18n="overview_heading">What We're Doing</h2>
-        </div>
-        <div class="overview-cols">
-          <div class="overview-desc">
-            <p data-i18n="overview_p1">We are working in community to develop a shared vision for Sycamore Grove Park and Ramona Hall Community Center, where neighborhood stability, climate resilience, accessibility, celebration, play, and connection to the rich landscape of Los Angeles can inform the future of these shared public resources.</p>
-            <p data-i18n="overview_p2">The Master Plan will be a guidebook for that future: a set of recommendations, from small fixes like a working water fountain to larger changes to the landscape, that support the people, plants, and animals who use the park. It is the first master plan for Sycamore Grove to center the voice of the local community, and community input will shape both documents the process produces: the Master Plan and an Environmental Impact Report.</p>
-            <p data-i18n="overview_p3">The planning process will follow five phases.</p>
-          </div>
-          <div class="overview-timeline">
-            <ol class="timeline">
-              <li class="timeline__item timeline__item--current">
-                <div class="timeline__dot" aria-hidden="true">I</div>
-                <div class="timeline__content">
-                  <p class="timeline__phase-label" data-i18n="phase_label_1">Phase I</p>
-                  <h3 data-i18n="timeline_1_title">Research and Analysis</h3>
-                  <p data-i18n="timeline_1_desc">Explore Sycamore Grove's history and existing conditions, and gather community and stakeholder insights to identify opportunities, challenges, and priorities that will help guide the Master Plan.</p>
-                </div>
-                <span class="timeline__badge" data-i18n="timeline_badge">Current</span>
-              </li>
-              <li class="timeline__item">
-                <div class="timeline__dot" aria-hidden="true">II</div>
-                <div class="timeline__content">
-                  <p class="timeline__phase-label" data-i18n="phase_label_2">Phase II</p>
-                  <h3 data-i18n="timeline_2_title">Design Alternatives</h3>
-                  <p data-i18n="timeline_2_desc">Develop different ideas for the park and identify short and long-term improvement priorities based on community and stakeholder input.</p>
-                </div>
-              </li>
-              <li class="timeline__item">
-                <div class="timeline__dot" aria-hidden="true">III</div>
-                <div class="timeline__content">
-                  <p class="timeline__phase-label" data-i18n="phase_label_3">Phase III</p>
-                  <h3 data-i18n="timeline_3_title">Master Plan Preparation</h3>
-                  <p data-i18n="timeline_3_desc">Refine the preferred ideas and compile all research, community outreach findings, and design recommendations into a comprehensive vision for the park.</p>
-                </div>
-              </li>
-              <li class="timeline__item">
-                <div class="timeline__dot" aria-hidden="true">IV</div>
-                <div class="timeline__content">
-                  <p class="timeline__phase-label" data-i18n="phase_label_4">Phase IV</p>
-                  <h3 data-i18n="timeline_4_title">Environmental Review</h3>
-                  <p data-i18n="timeline_4_desc">Complete environmental review in accordance with the California Environmental Quality Act (CEQA) to support project approval.</p>
-                </div>
-              </li>
-              <li class="timeline__item">
-                <div class="timeline__dot" aria-hidden="true">V</div>
-                <div class="timeline__content">
-                  <p class="timeline__phase-label" data-i18n="phase_label_5">Phase V</p>
-                  <h3 data-i18n="timeline_5_title">Master Plan Adoption</h3>
-                  <p data-i18n="timeline_5_desc">Once approved, the Master Plan will guide the future of the park.</p>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-        <div class="overview-timeline-graphic">
-          <!-- Replace with <img src="./Images/Sycamore%20Grove%20MP_Visual%20Timeline.png" alt="Sycamore Grove Park Master Plan visual timeline"> -->
-          <div class="graphic-placeholder"><span class="placeholder-label">Visual timeline graphic (from the Stayner team's schedule)</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- THEN AND NOW (new for Sycamore Grove) -->
-    <section class="section section--cream" id="history">
-      <div class="section__inner">
-        <aside class="mock-note" data-kind="new"><strong>New for Sycamore Grove</strong>A new section built from template parts, the way South Griffith added Proposed Alternatives. Historic photos to come. It could fold into About the Site to keep the menu at five links.</aside>
-        <div class="section__inner--split history-split">
-          <div class="about-text">
-            <p class="section-label" data-i18n="history_label">Then and Now</p>
-            <h2 class="section-heading" data-i18n="history_heading">A Grove Shaped by Water</h2>
-            <p data-i18n="history_p1">The Western Sycamore, after which the park is named, has long provided shade and shelter with its mottled bark and wide canopy. Sycamores thrive in moist ground, and the water that fed this grove came from the North Branch creek, which was buried in the early twentieth century.</p>
-            <p data-i18n="history_p2">Historic photos and neighbors' stories will appear here beside views of the park today, so everyone can start the conversation from the same place.</p>
-            <div class="prompt-card">
-              <p class="prompt-card__tag" data-i18n="prompt_tag">Share a memory</p>
-              <h3 data-i18n="prompt_heading">What makes you proud of Sycamore Grove?</h3>
-              <p data-i18n="prompt_body">Tell us about a moment, a place, or a person that makes this park yours.</p>
-              <a href="#involved" class="btn btn--outline" data-i18n="prompt_cta">Share Your Story</a>
-            </div>
-          </div>
-          <div class="carousel" role="region" aria-label="Historic and current photos" aria-roledescription="carousel">
-            <div class="carousel__slide is-active">
-              <div class="carousel__placeholder"><span class="placeholder-label">Historic photo: the North Branch creek</span></div>
-              <span class="carousel__credit">Photo: archive to be confirmed</span>
-            </div>
-            <div class="carousel__slide">
-              <div class="carousel__placeholder"><span class="placeholder-label">The same view today</span></div>
-              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
-            </div>
-            <div class="carousel__slide">
-              <div class="carousel__placeholder"><span class="placeholder-label">Historic photo: Ramona Hall or the bandshell</span></div>
-              <span class="carousel__credit">Photo: archive to be confirmed</span>
-            </div>
-            <button class="carousel__btn carousel__btn--prev" aria-label="Previous image">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-            </button>
-            <button class="carousel__btn carousel__btn--next" aria-label="Next image">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
-            </button>
-            <div class="carousel__dots" aria-hidden="true">
-              <button class="carousel__dot is-active" tabindex="-1"></button>
-              <button class="carousel__dot" tabindex="-1"></button>
-              <button class="carousel__dot" tabindex="-1"></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GET INVOLVED -->
-    <section class="section section--orange" id="involved">
-      <div class="section__inner">
-        <aside class="mock-note mock-note--on-dark" data-kind="updated"><strong>Template, updated</strong>Same layout as the sister sites. New: a placeholder for the ETC Institute community survey, and an online version of each workshop for people who can't attend.</aside>
-        <div class="involved-split">
-          <div class="involved-left">
-            <p class="section-label section-label--light" data-i18n="involved_label">Get Involved</p>
-            <h2 class="section-heading section-heading--white" data-i18n="involved_heading">Share Your Voice</h2>
-            <p class="involved-body" data-i18n="involved_body">This is the first master plan for Sycamore Grove that centers the voice of the local community. Your ideas, priorities, and concerns will help guide every recommendation.</p>
-            <p class="survey-closed" data-i18n="survey_note">A community survey by ETC Institute will be available online and by mail. Check back here, or subscribe below to hear when it opens.</p>
-            <div class="survey-cta">
-              <span class="btn btn--accent is-soon" aria-disabled="true" data-i18n="survey_cta_soon">Survey Coming Soon</span>
-            </div>
-            <div class="workshop-block">
-              <p class="workshop-tag" data-i18n="workshop_tag">Community Workshop</p>
-              <h3 data-i18n="workshop_heading">Next Event to be Announced. Subscribe below for Updates</h3>
-              <ul class="workshop-details">
-                <li><span data-i18n="workshop_date_label">Date</span><span data-i18n="workshop_date_value">TBD</span></li>
-                <li><span data-i18n="workshop_time_label">Time</span><span data-i18n="workshop_time_value">TBD</span></li>
-                <li><span data-i18n="workshop_where_label">Where</span><span data-i18n="workshop_where_value">TBD</span></li>
-              </ul>
-            </div>
-            <div class="online-block">
-              <p class="workshop-tag" data-i18n="online_tag">Can't make it in person?</p>
-              <h3 data-i18n="online_heading">Take Part Online</h3>
-              <p data-i18n="online_body">Every workshop will have an online version with the same materials and questions, so you can share your input on your own time.</p>
-              <span class="btn btn--white is-soon" aria-disabled="true" data-i18n="online_cta">Opens With the First Workshop</span>
-            </div>
-          </div>
-          <div class="involved-form">
-            <form id="feedbackForm" novalidate>
-              <h3 data-i18n="form_heading">Send Us Feedback</h3>
-              <div class="form-field">
-                <label for="name" data-i18n="form_name_label">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" data-i18n-placeholder="form_name_placeholder">
-              </div>
-              <div class="form-field">
-                <label for="email" data-i18n="form_email_label">Email</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" data-i18n-placeholder="form_email_placeholder">
-              </div>
-              <div class="form-field">
-                <label for="message" data-i18n="form_message_label">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Your feedback or question..." required data-i18n-placeholder="form_message_placeholder"></textarea>
-              </div>
-              <button type="submit" class="btn btn--primary btn--full" data-i18n="form_submit">Send Feedback</button>
-              <p class="form-status" id="formStatus" aria-live="polite" aria-atomic="true"></p>
-            </form>
-          </div>
-        </div>
-        <div class="updates-row">
-          <p class="updates-label" data-i18n="updates_label">Get updates on project progress</p>
-          <form class="updates-form" id="updatesForm" novalidate>
-            <input type="email" class="updates-input" placeholder="Enter email" aria-label="Email address" required data-i18n-placeholder="updates_placeholder">
-            <button type="submit" class="updates-submit" data-i18n="updates_submit">Subscribe</button>
-          </form>
-          <p class="updates-status" id="updatesStatus" aria-live="polite" aria-atomic="true"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT THE SITE -->
-    <section class="section section--cream" id="about">
-      <div class="section__inner">
-        <aside class="mock-note" data-kind="template"><strong>Same as sister sites</strong>Template layout with Sycamore Grove copy. Photos by Rio Ash Phoenix to come, each with a credit.</aside>
-        <div class="section__inner--split about-split">
-          <div class="about-text">
-            <p class="section-label" data-i18n="about_label">About the Site</p>
-            <h2 class="section-heading" data-i18n="about_heading">Sycamore Grove Today</h2>
-            <p data-i18n="about_p1">Sycamore Grove is both a city park and a riparian environment, located immediately adjacent to the Arroyo Seco and the Arroyo Seco Parkway.</p>
-            <p data-i18n="about_p2">The park is a beloved community asset, with the historic Ramona Hall Community Center, a bandshell, tennis courts, and other amenities that serve surrounding Highland Park residents.</p>
-          </div>
-          <div class="carousel" role="region" aria-label="Site images" aria-roledescription="carousel">
-            <div class="carousel__slide is-active">
-              <div class="carousel__placeholder"><span class="placeholder-label">Sycamore canopy</span></div>
-              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
-            </div>
-            <div class="carousel__slide">
-              <div class="carousel__placeholder"><span class="placeholder-label">Ramona Hall Community Center</span></div>
-              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
-            </div>
-            <div class="carousel__slide">
-              <div class="carousel__placeholder"><span class="placeholder-label">Bandshell</span></div>
-              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
-            </div>
-            <div class="carousel__slide">
-              <div class="carousel__placeholder"><span class="placeholder-label">Arroyo Seco edge</span></div>
-              <span class="carousel__credit">Photo: Rio Ash Phoenix (to come)</span>
-            </div>
-            <button class="carousel__btn carousel__btn--prev" aria-label="Previous image">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-            </button>
-            <button class="carousel__btn carousel__btn--next" aria-label="Next image">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
-            </button>
-            <div class="carousel__dots" aria-hidden="true">
-              <button class="carousel__dot is-active" tabindex="-1"></button>
-              <button class="carousel__dot" tabindex="-1"></button>
-              <button class="carousel__dot" tabindex="-1"></button>
-              <button class="carousel__dot" tabindex="-1"></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DOCUMENTS -->
-    <section class="section section--white" id="documents">
-      <div class="section__inner">
-        <aside class="mock-note" data-kind="template"><strong>Same as sister sites</strong>The template's empty state, until the Research and Analysis document is ready. Documents will then be grouped by phase, as on South Griffith Park.</aside>
-        <div class="section__header">
-          <p class="section-label" data-i18n="docs_label">Documents</p>
-          <h2 class="section-heading" data-i18n="docs_heading">Project Materials</h2>
-          <p class="section-intro" data-i18n="docs_intro">Project reports, presentations, and reference materials will be made available here for download as they are produced.</p>
-        </div>
-        <div class="docs-empty">
-          <p class="docs-empty__title" data-i18n="docs_empty_title">Documents coming soon</p>
-          <p data-i18n="docs_empty_body">Check back as the project progresses — reports and presentations will be uploaded here for download.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section--cream" id="faq">
-      <div class="section__inner">
-        <aside class="mock-note" data-kind="updated"><strong>Template, updated</strong>Same accordion, with new questions: what a master plan is, what to do if you can't make a meeting, and who the plan is for. That last answer is to be written with the team.</aside>
-        <div class="section__header">
-          <p class="section-label" data-i18n="faq_label">FAQ</p>
-          <h2 class="section-heading" data-i18n="faq_heading">Frequently Asked Questions</h2>
-        </div>
-        <div class="accordion" role="list">
-
-          <div class="accordion__item" role="listitem">
-            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-1">
-              <span data-i18n="faq_1_q">What is the Sycamore Grove Park Master Plan?</span>
-              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion__body" id="faq-1" role="region">
-              <div class="accordion__body-inner" data-i18n-html="faq_1_body">
-                <p>The Sycamore Grove Park Master Plan is a planning initiative led by the City of Los Angeles Department of Recreation and Parks to guide the future of Sycamore Grove Park and Ramona Hall Community Center. It is the first master plan for the park to center the voice of the local community.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion__item" role="listitem">
-            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-2">
-              <span data-i18n="faq_2_q">What is a master plan?</span>
-              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion__body" id="faq-2" role="region">
-              <div class="accordion__body-inner" data-i18n-html="faq_2_body">
-                <p>A master plan is a legal document: a set of recommendations for how a park should change over time. Recommendations can range from small improvements, like fixing a water fountain, to larger changes to the landscape.</p>
-                <p>This process produces two documents: the Master Plan and an Environmental Impact Report, which studies how proposed changes would affect the environment. Community input shapes the decisions in both.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion__item" role="listitem">
-            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-3">
-              <span data-i18n="faq_3_q">Why is this happening now?</span>
-              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion__body" id="faq-3" role="region">
-              <div class="accordion__body-inner" data-i18n-html="faq_3_body">
-                <p>Sycamore Grove is a beloved community asset, and RAP has identified it as a park in need of a new vision. <em class="draft">[Draft: add funding and background once confirmed with the project team.]</em></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion__item" role="listitem">
-            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-4">
-              <span data-i18n="faq_4_q">How can I get involved?</span>
-              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion__body" id="faq-4" role="region">
-              <div class="accordion__body-inner" data-i18n-html="faq_4_body">
-                <p>Community members will be able to take part through:</p>
-                <ul>
-                  <li>A community survey, online and by mail</li>
-                  <li>Community workshops</li>
-                  <li>An online version of each workshop</li>
-                  <li>Sending feedback through this website</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion__item" role="listitem">
-            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-5">
-              <span data-i18n="faq_5_q">What if I can't make a meeting?</span>
-              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion__body" id="faq-5" role="region">
-              <div class="accordion__body-inner" data-i18n-html="faq_5_body">
-                <p>Every workshop will have an online version with the same materials and questions, so you can share your input on your own time. You can also send feedback through the form on this page at any time.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion__item" role="listitem">
-            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-6">
-              <span data-i18n="faq_6_q">Who is this plan for?</span>
-              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion__body" id="faq-6" role="region">
-              <div class="accordion__body-inner" data-i18n-html="faq_6_body">
-                <p><em class="draft">[Draft: answer to be written with the project team. It should speak directly to neighbors' questions about displacement, change in Highland Park, and who the park serves.]</em></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion__item" role="listitem">
-            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-7">
-              <span data-i18n="faq_7_q">When will the Master Plan be complete?</span>
-              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion__body" id="faq-7" role="region">
-              <div class="accordion__body-inner" data-i18n-html="faq_7_body">
-                <p>The tentative schedule is:</p>
-                <ul>
-                  <li><strong>Current (Fall 2026 to early 2027):</strong> Research and Analysis</li>
-                  <li><strong>2027:</strong> Community engagement and design</li>
-                  <li><strong>2027 to 2028:</strong> Environmental Review (CEQA process)</li>
-                  <li><strong>Fall 2028:</strong> Final Master Plan</li>
-                </ul>
-                <p>Updates to the schedule will be shared as the work advances.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion__item" role="listitem">
-            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-8">
-              <span data-i18n="faq_8_q">Who should I contact with questions?</span>
-              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="accordion__body" id="faq-8" role="region">
-              <div class="accordion__body-inner" data-i18n-html="faq_8_body">
-                <p>You can reach the project team by submitting the feedback form on this page.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__supergraphic">
-      <!-- Replace with <img src="./Logo/SGV-Footer-Wordmark.png" alt="Sycamore Grove" class="footer__wordmark"> -->
-      <svg class="footer__wordmark wordmark-placeholder" viewBox="0 0 1000 132" role="img" aria-label="Sycamore Grove"><text x="0" y="122" textLength="1000" lengthAdjust="spacingAndGlyphs">SYCAMORE GROVE</text></svg>
+<dialog class="menu" id="menu" aria-labelledby="menu-title">
+  <div class="menu__inner">
+    <div class="menu__top">
+      <p class="label" id="menu-title" data-i18n="menu_title">Sections</p>
+      <button class="close-btn" type="button" data-close><span data-i18n="nav_close">Close</span> <span aria-hidden="true">&times;</span></button>
     </div>
-    <div class="footer__inner">
-      <div class="footer__left">
-        <aside class="mock-note mock-note--on-dark" data-kind="updated"><strong>Template, updated</strong>Same footer. Sycamore Grove's wordmark and green accent color are proposals.</aside>
-        <!-- Replace with <img src="./Logo/LA_Rec%26Parks_Logo_White.svg" alt="LA Rec &amp; Parks" class="footer__logo" width="130" height="40"> -->
-        <span class="footer__logo logo-placeholder logo-placeholder--light" role="img" aria-label="LA Rec &amp; Parks">RAP logo</span>
-        <p data-i18n="footer_copyright">© 2026 City of Los Angeles Department of Recreation and Parks. All rights reserved.</p>
-      </div>
-      <div class="footer__right">
-        <span class="footer__note" data-i18n-html="footer_note">Sycamore Grove Park is in Highland Park, along the Arroyo Seco.</span>
+    <ol class="menu__list">
+      <li><a href="#park"><span class="menu__num">01</span><span data-i18n="sec_park">The Park</span></a></li>
+      <li><a href="#plan"><span class="menu__num">02</span><span data-i18n="sec_plan">The Plan</span></a></li>
+      <li><a href="#process"><span class="menu__num">03</span><span data-i18n="sec_process">Process &amp; Timeline</span></a></li>
+      <li><a href="#involved"><span class="menu__num">04</span><span data-i18n="sec_involved">Get Involved</span></a></li>
+      <li><a href="#faq"><span class="menu__num">05</span><span data-i18n="sec_faq">FAQ</span></a></li>
+      <li><a href="#materials"><span class="menu__num">06</span><span data-i18n="sec_materials">Project Materials</span></a></li>
+    </ol>
+    <p class="menu__contact" data-i18n-html="contact_line">Contact <a href="mailto:sycamore@staynerarchitects.com">sycamore@staynerarchitects.com</a> with comments or questions.</p>
+    <!-- DRAFT ONLY --><p><button class="menu__review" type="button" data-open="notes" data-close>Draft review notes</button></p>
+  </div>
+</dialog>
+
+<main id="main">
+
+  <!-- ============ OPENING ============ -->
+  <section class="hero" id="intro" aria-labelledby="intro-title">
+    <img class="hero__img"
+         src="Images/hero-grove-1400.jpg"
+         srcset="Images/hero-grove-800.jpg 800w, Images/hero-grove-1400.jpg 1400w, Images/hero-grove-2000.jpg 2000w"
+         sizes="100vw"
+         alt="Pale-barked sycamores leaning over a wide lawn at Sycamore Grove Park."
+         fetchpriority="high">
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <h1 class="sr-only" id="intro-title">Sycamore Grove Park and Ramona Hall Master Plan</h1>
+      <p class="hero__statement" data-i18n="hero_statement">We are working in community to develop a shared vision for Sycamore Grove Park &amp; Ramona Hall Community Center, where neighborhood stability, climate resilience, accessibility, celebration, play, and connectivity shape the future of this place.</p>
+
+      <div class="hero__bottom">
+        <aside class="callout" aria-labelledby="callout-title">
+          <span class="stamp" aria-hidden="true" data-i18n="stamp">Save the date</span>
+          <p class="label" data-i18n="callout_label">Upcoming</p>
+          <p class="callout__title" id="callout-title" data-i18n="callout_title">Public Gathering #1</p>
+          <p class="callout__date"><time datetime="2027-02-20T13:00" data-i18n="callout_date">Saturday, February 20, 2027 · 1 PM</time></p>
+          <a class="arrow-link" href="#involved"><span data-i18n="callout_link">All the ways to take part</span><span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </aside>
+        <p class="hero__meta">
+          <span data-i18n="hero_place">Sycamore Grove Park and Ramona Hall Community Center, Highland Park, along the Arroyo Seco.</span>
+          <span class="credit">Photo: Rio Asch Phoenix</span>
+        </p>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script src="translations.js"></script>
-  <script src="main.js"></script>
-  <!-- MOCKUP ONLY -->
-  <script src="mockup.js"></script>
+  <!-- ============ 01 THE PARK ============ -->
+  <section class="section section--sand park" id="park" aria-labelledby="park-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="park-title"><span data-i18n="sec_park">The Park</span><span class="sec-num" aria-hidden="true">01</span></h2>
+
+      <div class="park__intro">
+        <div class="park__text">
+          <p class="lead">Sycamore Grove is a beloved community park with a long history of serving Highland Park residents. It is one of Los Angeles&rsquo; oldest city parks, and a valued site for celebration, exercise, and play.</p>
+          <p>After more than 120 years as an official Los Angeles City Park, and many more as ancestral land of the Tongva people, the park is ready for a new vision that taps its full potential for the community and nature.</p>
+        </div>
+
+        <figure class="map">
+          <div class="map__frame">
+            <img src="Images/park-map-900.jpg"
+                 srcset="Images/park-map-900.jpg 900w, Images/park-map-1600.jpg 1600w"
+                 sizes="(min-width: 900px) 50vw, 100vw"
+                 width="900" height="900" loading="lazy"
+                 alt="Aerial map of Sycamore Grove Park, a long, narrow park outlined in orange. Ramona Hall sits at its southwest end. The Arroyo Seco runs along its east side, with Debs Park, the Audubon Center and the Montecito Heights Recreation Center beyond. The Southwest Museum is to the west.">
+            <ul class="map__labels" aria-hidden="true">
+              <li style="--x:22%;--y:94%">Ramona Hall</li>
+              <li class="map__label--water" style="--x:73%;--y:45%">Arroyo Seco</li>
+              <li class="map__label--start" style="--x:6%;--y:40%">Southwest Museum</li>
+              <li style="--x:88%;--y:63%">Debs Park</li>
+              <li style="--x:56%;--y:80%">Montecito Heights<br>Recreation Center</li>
+              <li style="--x:84%;--y:86%">Audubon Center</li>
+            </ul>
+          </div>
+          <figcaption>Sycamore Grove Park, outlined, runs along the Arroyo Seco in Highland Park. <span class="credit">Map: Stayner Architects</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="float">
+        <figure class="float__item fl-bark" data-speed="0.06">
+          <img src="Images/park-bark-600.jpg" srcset="Images/park-bark-600.jpg 600w, Images/park-bark-1000.jpg 1000w" sizes="(min-width: 900px) 25vw, 50vw" width="600" height="750" loading="lazy" alt="Close-up of mottled white and grey sycamore bark among leaves.">
+          <figcaption>Sycamore bark</figcaption>
+        </figure>
+        <figure class="float__item fl-hall" data-speed="-0.04">
+          <img src="Images/park-ramona-hall-800.jpg" srcset="Images/park-ramona-hall-800.jpg 800w, Images/park-ramona-hall-1400.jpg 1400w" sizes="(min-width: 900px) 42vw, 100vw" width="800" height="600" loading="lazy" alt="Ramona Hall, a cream stucco building with a tiled roof and a row of wide arches.">
+          <figcaption>Ramona Hall Community Center</figcaption>
+        </figure>
+
+        <div class="float__text fl-t1">
+          <p class="lead">The park is a critical connection to the Arroyo Seco watershed.</p>
+          <p>While the park&rsquo;s namesake sycamores have long provided cool shade for residents, they thrive in a moist environment originally created by North Branch Creek. Over the 20th century, this tributary was buried and eventually redirected to the municipal stormwater system because of high contaminant levels.</p>
+        </div>
+        <figure class="float__item fl-arroyo" data-speed="0.05">
+          <img src="Images/park-arroyo-800.jpg" srcset="Images/park-arroyo-800.jpg 800w, Images/park-arroyo-1400.jpg 1400w" sizes="(min-width: 900px) 42vw, 100vw" width="800" height="600" loading="lazy" alt="A shallow stream of water running down a sloped concrete channel, with a storm drain opening in the wall and a freeway bridge overhead.">
+          <figcaption>The concrete channel of the Arroyo Seco, beside the park</figcaption>
+        </figure>
+
+        <figure class="float__item fl-jacaranda" data-speed="-0.05">
+          <img src="Images/park-jacaranda-600.jpg" srcset="Images/park-jacaranda-600.jpg 600w, Images/park-jacaranda-1000.jpg 1000w" sizes="(min-width: 900px) 25vw, 50vw" width="600" height="600" loading="lazy" alt="Looking up into a jacaranda tree covered in purple blossoms.">
+          <figcaption>Jacaranda in bloom</figcaption>
+        </figure>
+        <figure class="float__item fl-bandshell" data-speed="0.04">
+          <img src="Images/park-bandshell-800.jpg" srcset="Images/park-bandshell-800.jpg 800w, Images/park-bandshell-1400.jpg 1400w" sizes="(min-width: 900px) 42vw, 100vw" width="800" height="600" loading="lazy" alt="The park's white bandshell, with rows of orange concrete benches in front of it.">
+          <figcaption>The bandshell and its benches</figcaption>
+        </figure>
+
+        <figure class="float__item fl-squirrel" data-speed="0.07">
+          <img src="Images/park-squirrel-600.jpg" srcset="Images/park-squirrel-600.jpg 600w, Images/park-squirrel-1000.jpg 1000w" sizes="(min-width: 900px) 25vw, 50vw" width="600" height="750" loading="lazy" alt="A squirrel clinging to the pale trunk of a tree.">
+          <figcaption>A neighbor in the canopy</figcaption>
+        </figure>
+        <div class="float__text fl-t2">
+          <p>Ramona Hall has not been upgraded since <mark class="todo" title="Year to confirm with the team">[year]</mark>, and reviving the creek and modernizing the park&rsquo;s amenities could help many future generations continue to enjoy this unique spot.</p>
+        </div>
+
+        <figure class="float__item fl-walk" data-speed="-0.03">
+          <img src="Images/park-walk-800.jpg" srcset="Images/park-walk-800.jpg 800w, Images/park-walk-1400.jpg 1400w" sizes="(min-width: 900px) 42vw, 100vw" width="800" height="600" loading="lazy" alt="A person walking a dog on a path between tall sycamores, with people resting on the lawn beyond.">
+          <figcaption>A walk through the grove</figcaption>
+        </figure>
+        <figure class="float__item fl-inside" data-speed="0.06">
+          <img src="Images/park-hall-inside-600.jpg" srcset="Images/park-hall-inside-600.jpg 600w, Images/park-hall-inside-1000.jpg 1000w" sizes="(min-width: 900px) 25vw, 50vw" width="600" height="750" loading="lazy" alt="Inside Ramona Hall: a tiled lobby under a large wrought-iron chandelier.">
+          <figcaption>Inside Ramona Hall</figcaption>
+        </figure>
+        <figure class="float__item fl-play" data-speed="-0.04">
+          <img src="Images/park-play-800.jpg" srcset="Images/park-play-800.jpg 800w, Images/park-play-1400.jpg 1400w" sizes="(min-width: 900px) 42vw, 100vw" width="800" height="600" loading="lazy" alt="A person kicking a ball on the lawn under a large tree, near the bandshell seating.">
+          <figcaption>A game on the lawn</figcaption>
+        </figure>
+      </div>
+      <p class="credit park__credit">Photos: Rio Asch Phoenix</p>
+    </div>
+  </section>
+
+  <!-- ============ 02 THE PLAN ============ -->
+  <section class="section section--green plan" id="plan" aria-labelledby="plan-title">
+    <div class="wrap">
+      <div class="plan__head">
+        <h2 class="sec-title" id="plan-title"><span data-i18n="sec_plan">The Plan</span><span class="sec-num" aria-hidden="true">02</span></h2>
+        <div class="plan__controls">
+          <button class="round-btn" type="button" data-scroll="-1" aria-controls="artifacts" data-i18n-aria="prev" aria-label="Previous"><span aria-hidden="true">&larr;</span></button>
+          <button class="round-btn" type="button" data-scroll="1" aria-controls="artifacts" data-i18n-aria="next" aria-label="Next"><span aria-hidden="true">&rarr;</span></button>
+        </div>
+      </div>
+      <p class="lead plan__lead">What the Master Plan is, who is shaping it, and what comes first.</p>
+    </div>
+
+    <div class="artifacts" id="artifacts" tabindex="0" role="region" aria-label="About the plan">
+      <ol class="artifacts__track">
+        <li class="paper">
+          <article>
+            <p class="paper__meta"><span>Sycamore Grove Master Plan</span><span>No. 01</span></p>
+            <h3>A guidebook for the future</h3>
+            <p>The Master Plan will be a guidebook for that future: a set of recommendations, from small fixes like a working water fountain to larger changes to the landscape, that support the people, plants, and animals who use the park.</p>
+          </article>
+        </li>
+        <li class="print print--low">
+          <figure>
+            <img src="Images/plan-map-blanket-600.jpg" srcset="Images/plan-map-blanket-600.jpg 600w, Images/plan-map-blanket-1000.jpg 1000w" sizes="300px" width="600" height="750" loading="lazy" alt="A large aerial map of the park printed on fabric, spread on the grass with picnic blankets around it.">
+            <figcaption>The park map, printed on fabric, at a picnic conversation in the park. June 2026.</figcaption>
+          </figure>
+        </li>
+        <li class="paper paper--high">
+          <article>
+            <p class="paper__meta"><span>Sycamore Grove Master Plan</span><span>No. 02</span></p>
+            <h3>Two documents</h3>
+            <p>It is the first master plan for Sycamore Grove to center the voice of the local community. Community input will shape both documents the process produces: the Master Plan and an Environmental Impact Report.</p>
+          </article>
+        </li>
+        <li class="paper">
+          <article>
+            <p class="paper__meta"><span>Sycamore Grove Master Plan</span><span>No. 03</span></p>
+            <h3>A team that listens</h3>
+            <p>Los Angeles Recreation and Parks has engaged a team of community organizers, designers, and ecologists whose primary goal is to listen to stakeholders who use, live around, and benefit from the park, and then create a shovel-ready master plan that incorporates recreation, education, and the environment.</p>
+            <p>The plan will outline park changes that best support people, plants, and animals. The local community&rsquo;s voice will drive the plan through surveys, community meetings, and other forms of engagement.</p>
+          </article>
+        </li>
+        <li class="print print--high">
+          <figure>
+            <img src="Images/plan-board-600.jpg" srcset="Images/plan-board-600.jpg 600w, Images/plan-board-1000.jpg 1000w" sizes="300px" width="600" height="750" loading="lazy" alt="A community bulletin board with event flyers, mounted on the textured stucco wall of Ramona Hall.">
+            <figcaption>The community board at Ramona Hall.</figcaption>
+          </figure>
+        </li>
+        <li class="paper paper--low">
+          <article>
+            <p class="paper__meta"><span>Sycamore Grove Master Plan</span><span>No. 04</span></p>
+            <h3>Planning comes first</h3>
+            <p>The first step toward updating the park is the planning and environmental review processes. Implementation of the master plan will be part of the conversation, but it will be part of the second phase.</p>
+            <p>We are excited to work with stakeholders and look forward to envisioning a new chapter for Sycamore Grove together.</p>
+          </article>
+        </li>
+        <li class="print">
+          <figure>
+            <img src="Images/plan-seeds-600.jpg" srcset="Images/plan-seeds-600.jpg 600w, Images/plan-seeds-1000.jpg 1000w" sizes="300px" width="600" height="600" loading="lazy" alt="Sycamore leaves and a hanging string of round, spiky seed balls against the sky.">
+            <figcaption>Sycamore leaves and seed balls.</figcaption>
+          </figure>
+        </li>
+      </ol>
+    </div>
+    <div class="wrap"><p class="credit plan__credit">Photos: Rio Asch Phoenix</p></div>
+  </section>
+
+  <!-- ============ 03 PROCESS & TIMELINE ============ -->
+  <section class="section section--white process" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="process-title"><span data-i18n="sec_process">Process &amp; Timeline</span><span class="sec-num" aria-hidden="true">03</span></h2>
+      <p class="lead process__lead">The Master Plan will be developed over approximately 24 months through three primary phases.</p>
+
+      <ol class="phases">
+        <li class="phase phase--now">
+          <img class="phase__img" src="Images/process-picnic-700.jpg" srcset="Images/process-picnic-700.jpg 700w, Images/process-picnic-1200.jpg 1200w" sizes="(min-width: 900px) 33vw, 100vw" loading="lazy" alt="A group of people sitting in a circle on blankets on the lawn, talking, with the street and houses behind them.">
+          <div class="phase__panel">
+            <p class="phase__top"><span class="phase__num">/01</span><span class="now-tag" data-i18n="now">We are here</span></p>
+            <h3><span class="phase__kicker" data-i18n="phase_1">Phase I</span> <span data-i18n="phase_1_name">Discovery</span></h3>
+            <p class="phase__step">Research &amp; Analysis</p>
+            <p>Documenting existing site conditions, historic and cultural resources, infrastructure, and ecology while gathering initial community stories, priorities, and concerns.</p>
+          </div>
+        </li>
+        <li class="phase phase--dark">
+          <div class="phase__panel">
+            <p class="phase__top"><span class="phase__num">/02</span></p>
+            <h3><span class="phase__kicker" data-i18n="phase_2">Phase II</span> <span data-i18n="phase_2_name">Engagement</span></h3>
+            <p class="phase__step">Design Alternatives</p>
+            <p>Developing and testing multiple conceptual design scenarios for Sycamore Grove Park and Ramona Hall based on community feedback and technical findings.</p>
+            <p class="phase__step">Draft Master Plan Preparation</p>
+            <p>Refining the preferred vision into a comprehensive Draft Master Plan with prioritized projects, cost estimates, and a phased implementation strategy.</p>
+          </div>
+        </li>
+        <li class="phase phase--green">
+          <div class="phase__panel">
+            <p class="phase__top"><span class="phase__num">/03</span></p>
+            <h3><span class="phase__kicker" data-i18n="phase_3">Phase III</span> <span data-i18n="phase_3_name">Development</span></h3>
+            <p class="phase__step">Final Master Plan Adoption</p>
+            <p>Presenting the Final Master Plan to the Board of Recreation and Park Commissioners for formal adoption to guide future capital investments.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="eir">
+        <p class="label">Alongside</p>
+        <p><strong>The Environmental Impact Report</strong> will be developed in tandem with the Master Plan, following a similar but more structured process to complete required environmental assessments in compliance with the California Environmental Quality Act (CEQA) and tribal consultation (AB&nbsp;52).</p>
+      </div>
+
+      <div class="tl" aria-labelledby="tl-title">
+        <div class="tl__head">
+          <h3 id="tl-title" data-i18n="tl_title">Timeline</h3>
+          <p class="tl__note" data-i18n="tl_note">Timing is approximate and may shift.</p>
+        </div>
+        <p class="sr-only">We are in Phase I, Discovery. The milestones below are listed in order.</p>
+
+        <div class="tl__chart">
+          <div class="tl__axis" aria-hidden="true">
+            <span style="--m:0">Oct 2026</span>
+            <span style="--m:3">2027</span>
+            <span style="--m:15">2028</span>
+          </div>
+          <div class="tl__rowlabels" aria-hidden="true">
+            <span data-i18n="row_p">Phases</span>
+            <span data-i18n="row_g">Public gatherings</span>
+            <span data-i18n="row_s">Survey</span>
+            <span data-i18n="row_d">Documents</span>
+            <span data-i18n="row_e">Environmental review</span>
+          </div>
+          <div class="tl__today" style="--m:1.8" aria-hidden="true"><span data-i18n="tl_today">Today</span></div>
+
+          <ol class="tl__events">
+            <li class="tl__ev tl__ev--phase is-current" data-row="p" style="--m:0;--m2:4.1">
+              <span class="tl__when">Fall 2026 – early 2027</span>
+              <span class="tl__what"><span data-i18n="phase_1">Phase I</span>: <span data-i18n="phase_1_name">Discovery</span> <span class="tl__now" data-i18n="now">We are here</span></span>
+            </li>
+            <li class="tl__ev tl__ev--line" data-row="e" style="--m:0.4;--m2:24.3">
+              <span class="tl__when">Fall 2026 – fall 2028</span>
+              <span class="tl__what">Environmental Impact Report prepared alongside the plan</span>
+            </li>
+            <li class="tl__ev tl__ev--doc" data-row="d" style="--m:4.1">
+              <span class="tl__when">Early 2027</span>
+              <span class="tl__what">Research &amp; Analysis document</span>
+            </li>
+            <li class="tl__ev tl__ev--phase" data-row="p" style="--m:4.1;--m2:12.3">
+              <span class="tl__when">Early – fall 2027</span>
+              <span class="tl__what"><span data-i18n="phase_2">Phase II</span>: <span data-i18n="phase_2_name">Engagement</span></span>
+            </li>
+            <li class="tl__ev tl__ev--gather" data-row="g" style="--m:4.65">
+              <span class="tl__when">Feb 20, 2027</span>
+              <span class="tl__what">Public Gathering #1</span>
+            </li>
+            <li class="tl__ev tl__ev--range" data-row="s" style="--m:6;--m2:10.5">
+              <span class="tl__when">Spring – summer 2027</span>
+              <span class="tl__what">Community survey</span>
+            </li>
+            <li class="tl__ev tl__ev--doc" data-row="d" style="--m:6.8">
+              <span class="tl__when">Spring 2027</span>
+              <span class="tl__what">Design alternatives</span>
+            </li>
+            <li class="tl__ev tl__ev--gather" data-row="g" style="--m:7.6">
+              <span class="tl__when">Spring 2027 · date to come</span>
+              <span class="tl__what">Public Gathering #2</span>
+            </li>
+            <li class="tl__ev tl__ev--gather" data-row="g" style="--m:10.5">
+              <span class="tl__when">Summer 2027 · date to come</span>
+              <span class="tl__what">Public Gathering #3</span>
+            </li>
+            <li class="tl__ev tl__ev--doc tl__ev--small" data-row="e" style="--m:11.6">
+              <span class="tl__when">Fall 2027</span>
+              <span class="tl__what">Notice of Preparation</span>
+            </li>
+            <li class="tl__ev tl__ev--doc" data-row="d" style="--m:12.3">
+              <span class="tl__when">Fall 2027</span>
+              <span class="tl__what">Draft Master Plan</span>
+            </li>
+            <li class="tl__ev tl__ev--phase" data-row="p" style="--m:12.3;--m2:25">
+              <span class="tl__when">Fall 2027 – fall 2028</span>
+              <span class="tl__what"><span data-i18n="phase_3">Phase III</span>: <span data-i18n="phase_3_name">Development</span></span>
+            </li>
+            <li class="tl__ev tl__ev--range tl__ev--water" data-row="e" style="--m:18;--m2:20.2">
+              <span class="tl__when">Spring 2028</span>
+              <span class="tl__what">Public review of the draft report</span>
+            </li>
+            <li class="tl__ev tl__ev--gather" data-row="g" style="--m:19.1">
+              <span class="tl__when">Spring 2028</span>
+              <span class="tl__what">Public meeting</span>
+            </li>
+            <li class="tl__ev tl__ev--final tl__ev--end" data-row="d" style="--m:24.3">
+              <span class="tl__when">Fall 2028</span>
+              <span class="tl__what">Final Master Plan &amp; report, for adoption</span>
+            </li>
+          </ol>
+        </div>
+
+        <ul class="tl__key" aria-hidden="true">
+          <li><span class="key key--gather"></span> <span data-i18n="key_gather">Public gathering</span></li>
+          <li><span class="key key--doc"></span> <span data-i18n="key_doc">Document</span></li>
+          <li><span class="key key--final"></span> <span data-i18n="key_final">Final plan</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 GET INVOLVED ============ -->
+  <section class="section section--black involved" id="involved" aria-labelledby="involved-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="involved-title"><span data-i18n="sec_involved">Get Involved</span><span class="sec-num" aria-hidden="true">04</span></h2>
+      <p class="lead involved__lead">Your ideas, priorities, memories, and concerns will help guide every decision.</p>
+
+      <div class="ways">
+        <div class="way">
+          <p class="way__num" aria-hidden="true">1</p>
+          <h3 data-i18n="way_person">In person</h3>
+          <ul class="gatherings">
+            <li class="is-next">
+              <span class="label" data-i18n="label_next">Next</span>
+              <strong data-i18n="callout_title">Public Gathering #1</strong>
+              <time datetime="2027-02-20T13:00" data-i18n="callout_date">Saturday, February 20, 2027 · 1 PM</time>
+            </li>
+            <li>
+              <strong>Public Gathering #2</strong>
+              <span class="muted" data-i18n="date_tbd">Date to come</span>
+            </li>
+            <li>
+              <strong>Public Gathering #3</strong>
+              <span class="muted" data-i18n="date_tbd">Date to come</span>
+            </li>
+          </ul>
+          <p class="small">Photos from each gathering will be posted here afterward.</p>
+        </div>
+
+        <div class="way">
+          <p class="way__num" aria-hidden="true">2</p>
+          <h3 data-i18n="way_survey">Survey</h3>
+          <p>We are working with ETC Institute on delivering a survey. The survey period will be open in Spring/Summer 2027.</p>
+          <p class="small">The link will be posted here when the survey opens.</p>
+        </div>
+
+        <div class="way">
+          <p class="way__num" aria-hidden="true">3</p>
+          <h3 data-i18n="way_online">Online feedback</h3>
+          <p>Share an idea, a memory, a priority, or a concern with the project team, any time.</p>
+          <button class="pill pill--light" type="button" data-open="feedback"><span data-i18n="btn_feedback">Share feedback</span> <span aria-hidden="true">&rarr;</span></button>
+        </div>
+      </div>
+
+      <div class="involved__foot">
+        <form class="signup" id="signup-form" novalidate>
+          <label for="signup-email" data-i18n="email_label">Join the email list for regular updates and reminders.</label>
+          <div class="signup__row">
+            <input id="signup-email" name="email" type="email" autocomplete="email" required data-i18n-placeholder="email_ph" placeholder="Email address">
+            <button class="pill pill--light" type="submit" data-i18n="btn_join">Join</button>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="involved__contact" data-i18n-html="contact_line">Contact <a href="mailto:sycamore@staynerarchitects.com">sycamore@staynerarchitects.com</a> with comments or questions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 FAQ ============ -->
+  <section class="section section--sand faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq__grid">
+      <h2 class="sec-title" id="faq-title"><span data-i18n="sec_faq">FAQ</span><span class="sec-num" aria-hidden="true">05</span></h2>
+      <div class="faq__list">
+        <details>
+          <summary><span>Why are we creating a Master Plan now?</span><span class="plus" aria-hidden="true"></span></summary>
+          <p>While Sycamore Grove Park and Ramona Hall have received targeted upgrades over the years, such as the 2021 Measure A playground, the site lacks a unified, long-term roadmap. This Master Plan ensures future investments are coordinated, sustainable, and driven by community priorities.</p>
+        </details>
+        <details>
+          <summary><span>How is this different from the walkway and restroom construction happening in the park?</span><span class="plus" aria-hidden="true"></span></summary>
+          <p>The $1.1 million Measure A project currently underway focuses on immediate repairs: repaving walkways, connecting picnic paths, and upgrading restrooms to ADA standards by Fall 2027. The Master Plan looks much broader and further ahead, evaluating Ramona Hall, the bandshell, tennis courts, shade canopy, and long-term park transformation.</p>
+        </details>
+        <details>
+          <summary><span>When will new Master Plan projects be built?</span><span class="plus" aria-hidden="true"></span></summary>
+          <p>A Master Plan is a strategic blueprint, not a construction contract. Once the City adopts the Final Master Plan, it will use its phased recommendations to pursue dedicated capital funding for design and construction.</p>
+        </details>
+        <details>
+          <summary><span>How can local schools, youth, and community groups get involved?</span><span class="plus" aria-hidden="true"></span></summary>
+          <p>The project team is partnering with local schools, neighborhood councils, disability advocates, and cultural organizations throughout Highland Park and the Arroyo Seco corridor. To request a pop-up or focus group for your organization, contact the Planning Division.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 PROJECT MATERIALS ============ -->
+  <section class="section section--white materials" id="materials" aria-labelledby="materials-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="materials-title"><span data-i18n="sec_materials">Project Materials</span><span class="sec-num" aria-hidden="true">06</span></h2>
+      <div class="table-wrap">
+        <table class="docs">
+          <caption class="sr-only">Project documents, newest first</caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="th_date">Date</th>
+              <th scope="col" data-i18n="th_doc">Document</th>
+              <th scope="col" data-i18n="th_notes">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Add one row per document, newest first:
+            <tr>
+              <td><time datetime="2027-02-01">Feb 2027</time></td>
+              <td><a href="Documents/research-and-analysis.pdf">Research &amp; Analysis document</a> <span class="muted">PDF, 4 MB</span></td>
+              <td>Summary of existing conditions.</td>
+            </tr> -->
+            <tr class="docs__empty">
+              <td colspan="3" data-i18n="docs_empty">Documents will be posted here as they are released.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <svg class="footer__logo" viewBox="0 0 515 271" role="img" aria-label="LA Rec &amp; Parks"><use href="#rap-logo"></use></svg>
+        <p>Sycamore Grove Park &amp;<br>Ramona Hall Master Plan</p>
+      </div>
+      <nav class="footer__nav" aria-label="Sections">
+        <ul>
+          <li><a href="#park"><span aria-hidden="true">&rarr;</span> <span data-i18n="sec_park">The Park</span></a></li>
+          <li><a href="#plan"><span aria-hidden="true">&rarr;</span> <span data-i18n="sec_plan">The Plan</span></a></li>
+          <li><a href="#process"><span aria-hidden="true">&rarr;</span> <span data-i18n="sec_process">Process &amp; Timeline</span></a></li>
+          <li><a href="#involved"><span aria-hidden="true">&rarr;</span> <span data-i18n="sec_involved">Get Involved</span></a></li>
+          <li><a href="#faq"><span aria-hidden="true">&rarr;</span> <span data-i18n="sec_faq">FAQ</span></a></li>
+          <li><a href="#materials"><span aria-hidden="true">&rarr;</span> <span data-i18n="sec_materials">Project Materials</span></a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <p data-i18n-html="contact_line">Contact <a href="mailto:sycamore@staynerarchitects.com">sycamore@staynerarchitects.com</a> with comments or questions.</p>
+        <p data-i18n="footer_place">Sycamore Grove Park is in Highland Park, along the Arroyo Seco.</p>
+      </div>
+    </div>
+    <p class="footer__legal" data-i18n="footer_rights">&copy; 2026 City of Los Angeles Department of Recreation and Parks. All rights reserved.</p>
+  </div>
+  <p class="wordmark" aria-hidden="true"><span>S</span><span>Y</span><span>C</span><span>A</span><span>M</span><span>O</span><span>R</span><span>E</span><span class="wordmark__gap"></span><span>G</span><span>R</span><span>O</span><span>V</span><span>E</span></p>
+</footer>
+
+<!-- Feedback form -->
+<dialog class="sheet" id="feedback" aria-labelledby="feedback-title">
+  <form class="sheet__inner" id="feedback-form" novalidate>
+    <div class="sheet__top">
+      <h2 id="feedback-title" data-i18n="btn_feedback">Share feedback</h2>
+      <button class="close-btn" type="button" data-close><span data-i18n="nav_close">Close</span> <span aria-hidden="true">&times;</span></button>
+    </div>
+
+    <fieldset class="field">
+      <legend data-i18n="f_kind">What would you like to share?</legend>
+      <div class="chips">
+        <label><input type="radio" name="kind" value="idea" checked> <span data-i18n="f_kind_idea">An idea</span></label>
+        <label><input type="radio" name="kind" value="memory"> <span data-i18n="f_kind_memory">A memory</span></label>
+        <label><input type="radio" name="kind" value="priority"> <span data-i18n="f_kind_priority">A priority</span></label>
+        <label><input type="radio" name="kind" value="concern"> <span data-i18n="f_kind_concern">A concern</span></label>
+      </div>
+    </fieldset>
+
+    <div class="field">
+      <label for="fb-place" data-i18n="f_place">Is it about a place in the park? (optional)</label>
+      <select id="fb-place" name="place">
+        <option value="" data-i18n="f_place_none">No particular place</option>
+        <option>Ramona Hall Community Center</option>
+        <option>The bandshell</option>
+        <option>The playground</option>
+        <option>The tennis courts</option>
+        <option>Picnic areas</option>
+        <option>Lawns and sycamore groves</option>
+        <option>Paths and walkways</option>
+        <option>Restrooms</option>
+        <option>Parking</option>
+        <option>The edge along the Arroyo Seco Parkway</option>
+        <option>Somewhere else</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="fb-message" data-i18n="f_msg">Your message</label>
+      <textarea id="fb-message" name="message" rows="5" required></textarea>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="fb-name" data-i18n="f_name">Name (optional)</label>
+        <input id="fb-name" name="name" type="text" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="fb-email" data-i18n="f_email">Email (optional)</label>
+        <input id="fb-email" name="email" type="email" autocomplete="email">
+      </div>
+    </div>
+
+    <p class="small" data-i18n="f_private">Your response goes to the project team. It is not posted publicly.</p>
+    <div class="sheet__actions">
+      <button class="pill pill--dark" type="submit" data-i18n="btn_send">Send</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </div>
+  </form>
+</dialog>
+
+<!-- DRAFT ONLY: review notes. Delete this block and the button below before launch. -->
+<dialog class="sheet sheet--notes" id="notes" aria-labelledby="notes-title">
+  <div class="sheet__inner">
+    <div class="sheet__top">
+      <h2 id="notes-title">Review notes</h2>
+      <button class="close-btn" type="button" data-close>Close <span aria-hidden="true">&times;</span></button>
+    </div>
+    <p>Draft for review, November 2026. Things to check or send over:</p>
+    <ol class="notes">
+      <li><strong>Typeface.</strong> Figtree stands in for CircularXX until we have the RAP font files.</li>
+      <li><strong>Timeline.</strong> Seasons are read from Ru&rsquo;s internal chart and shown as approximate. Please confirm before this goes public.</li>
+      <li><strong>Public Gathering #1.</strong> Add the location once it&rsquo;s set.</li>
+      <li><strong>Ramona Hall.</strong> The year of its last upgrade is still a placeholder in The Park.</li>
+      <li><strong>Photos.</strong> All by Rio Asch Phoenix. The picnic photos (June 2026) show people&rsquo;s faces, so please confirm everyone is OK appearing on a City website. Historic photos of the park and the creek would round out The Park.</li>
+      <li><strong>Map.</strong> From Ru&rsquo;s outline, recolored. The labels are live text, not part of the image, so they can be read aloud and translated.</li>
+      <li><strong>Languages.</strong> The menu offers all four sister-site languages. Headings, buttons and the opening statement are translated; the rest follows once the copy is approved.</li>
+      <li><strong>Forms.</strong> Not connected yet, so nothing is sent. The feedback form&rsquo;s list of places is the starting point for the map where people can mark places they love, planned for a later round.</li>
+      <li><strong>Event photos.</strong> After each gathering, its photos will appear here and on the timeline.</li>
+    </ol>
+  </div>
+</dialog>
+<button class="review-pill" type="button" data-open="notes">Draft · Review notes</button>
+
+<script src="translations.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
